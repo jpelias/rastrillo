@@ -5,6 +5,7 @@ dependencies:
   pre:
     
     - pip install ecdsa
+    - pip install numpy
     
 test:
   override:
