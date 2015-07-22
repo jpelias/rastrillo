@@ -3,7 +3,7 @@ machine:
     version: 2.7.5
 dependencies:
   pre:
-  
+    - pip install PIL --allow-external PIL --allow-unverified PIL
     - pip install ecdsa
     
     
