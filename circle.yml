@@ -6,4 +6,8 @@ dependencies:
     
     - pip install ecdsa
     
+  test:
+  override:
+      
+    - python ./rastrillo/rastrillo.py
     
