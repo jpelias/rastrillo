@@ -1,4 +1,10 @@
 language: python
 python:
   - "2.7"
-pip install ecdsa
+
+dependencies:
+  pre:
+  
+    pip install ecdsa
+    
+    
