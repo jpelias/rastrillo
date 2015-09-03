@@ -16,6 +16,9 @@ environment:
 
     
 install:
+
+  - cinst numpy
+  
   #- ECHO "Filesystem root:"
   #- ps: "ls \"C:/\""
 
