@@ -1,2 +1,2 @@
-rastrillo.py
+rastrill
 ============
