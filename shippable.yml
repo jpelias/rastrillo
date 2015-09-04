@@ -7,20 +7,20 @@ python:
   
 before_install:
 
-  - sudo apt-get update
+  #- sudo apt-get update
   - sudo apt-get install -y libwww-perl libgmp3-dev
 
 install:
   - pip install -r requirements.txt
+  
+  - python rastrillo.py
 
 # Make folders for the reports
 #before_script:
- # - mkdir -p shippable/testresults
-  #- mkdir -p shippable/codecoverage
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
 
-script: python rastrillo.py
-  
+script: 
 
-notifications:
-  email:
-   - manofthevara@gmail.com
+  - python rastrillo.py 
+
