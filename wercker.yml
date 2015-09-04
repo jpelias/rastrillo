@@ -25,7 +25,8 @@ build:
   # Read more about steps on our dev center:
   # http://devcenter.wercker.com/docs/steps/index.html
   steps:
-        - install-packages:
+  
+    - install-packages:
             packages: libwww-perl 
             packages: libgmp3-dev
   
