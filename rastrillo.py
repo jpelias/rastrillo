@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 from time import sleep
 import os
 import ecdsa
