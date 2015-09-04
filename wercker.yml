@@ -27,8 +27,8 @@ build:
   steps:
   
     - install-packages:
-            packages: libwww-perl 
-            packages: libgmp3-dev
+            packages: libwww-perl libgmp3-dev
+            
   
     # A step that sets up the python virtual environment
     - virtualenv:
