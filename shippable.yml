@@ -3,7 +3,7 @@ build_image: shippableimages/ubuntu1404_python
 
 python:
   
-  - 2.6
+  - 2.7
   
 before_install:
 
@@ -14,9 +14,9 @@ install:
   - pip install -r requirements.txt
 
 # Make folders for the reports
-before_script:
-  - mkdir -p shippable/testresults
-  - mkdir -p shippable/codecoverage
+#before_script:
+ # - mkdir -p shippable/testresults
+  #- mkdir -p shippable/codecoverage
 
 script: python rastrillo.py
   
