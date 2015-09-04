@@ -1,13 +1,14 @@
 language: python
-build_image: shippableimages/ubuntu1204_python
+build_image: shippableimages/ubuntu1404_python
+
 python:
   
   - 2.7
   
 before_install:
 
-  - shippable_retry sudo apt-get update
-  - shippable_retry sudo apt-get install -y libwww-perl libgmp3-dev
+  - sudo apt-get update
+  - sudo apt-get install -y libwww-perl libgmp3-dev
 
 install:
   - pip install -r requirements.txt
