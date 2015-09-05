@@ -129,9 +129,9 @@ def fourmi2():
  return bytez
 
 acumulado = float(0)
-outfile = open("pillado.txt","a") # open file for appending
+#outfile = open("pillado.txt","a") # open file for appending
 
-for n in range(10000):
+for n in range(100000):
 
 #bytes = fourmi(256)  #"" Returns a list of n random bits.  from FourmiLab """
 #bytes = aleat(256)    #"" Returns a list of n random bits.  from dev/random  """
@@ -190,7 +190,9 @@ for n in range(10000):
     	#print numtowif(pk)
     	#print '\033[1;36mBitcoin Address:\033[1;m'
     	    acumulado = acumulado + amount
-            print acumulado, addy(pk),amount/100000000
+            # print acumulado, addy(pk),amount/100000000
+            sys.stdout.write('%s\r' % str(n))
+            sys.stdout.flush()
     	
     	#print 
 
@@ -198,7 +200,7 @@ for n in range(10000):
     	    if amount > 0 : 
                 # outfile.write(str(amount/100000000) +","+ addy(pk) +","+ numtowif(pk) +"\n")
                 reply(pk)
-                print numtowif(pk)
+                
  
 
 #outfile.close()
