@@ -2,7 +2,8 @@
 
 
 from time import sleep
-import os
+import os 
+import sys
 import ecdsa
 import random 
 import urllib 
