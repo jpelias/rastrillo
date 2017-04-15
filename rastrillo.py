@@ -14,13 +14,13 @@ import numpy as np
 import urllib
 import urllib2
 
-TOKEN = '110309400:AAExG6jwuCUjJzeLzWqi4jmDhrEriDGT5fY'
+TOKEN = '110309400:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
 
 def reply(msg):
 
     resp = urllib2.urlopen(BASE_URL + 'sendMessage', urllib.urlencode({
-    'chat_id': '6660201' ,
+    'chat_id': 'xxxxxx' ,
     'text': msg.encode('utf-8'),
     'disable_web_page_preview': 'true',
     'reply_to_message_id': "" ,
