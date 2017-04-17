@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# apt install python-ecdsa python-numpy libwww-perl
+# apt install python-ecdsa python-numpy (ya no usa libwww-perl al quitar GET)
 
 from bcoin import *
 
